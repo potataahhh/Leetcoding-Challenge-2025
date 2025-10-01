@@ -12,3 +12,18 @@ public:
         return res;
     }
 };
+
+TC: O(nlogn)
+SC: O(1)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+class Solution {
+public:
+    int numWaterBottles(int numBottles, int numExchange) {
+        return numBottles +(numBottles-1)/(numExchange-1);
+    }
+};     
+
+TC: O(1)
+SC: O(1)
